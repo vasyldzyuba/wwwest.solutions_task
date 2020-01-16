@@ -8,13 +8,15 @@
 5. Copy any url and paste it into your browser.
 
 USED TECHNOLOGIES:
-HTML5
-CSS3
-Bootstrap4
-JavaScript
-jQuery
-AngularJs
-LocalStorage
+HTML5,
+CSS3,
+Bootstrap4,
+JavaScript,
+jQuery,
+AngularJs,
+LocalStorage,
+News Api,
+Exchange Api.
 
 
 Any problems with starting the project? Contact me via email vasyl.dzuba1@gmail.com
