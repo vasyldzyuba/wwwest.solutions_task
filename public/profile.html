@@ -1,0 +1,60 @@
+<header><img id="logo" src="images/logo_transparent.png" alt=""></header>
+<main>
+    <nav>
+        <ul>
+            <a href="#!/">
+                <li>Home</li>
+            </a>
+            <li>My profile</li>
+            <a href="#!/news">
+                <li>News</li>
+            </a>
+        </ul>
+    </nav>
+</main>
+<div class="profileContent">
+    <p>
+        <h1 class="textWhite">ADMINISTRATOR</h1>
+    </p>
+    <hr>
+    <h4 class="textWhite">Personal profile</h4>
+    <hr>
+    <img class="profileAvatar" src="../images/face-head-man-icon-1.png" alt="">
+    <hr>
+    <!-- <p> -->
+    <h4 class="mySkills">About Me</h4>
+    <p>
+        <h6 class="aboutMe textWhite"> I Am Front-End Developer With 7 Month Of Experience In Web-Development And I Have
+            Certificate Of Completion Web-Developer Course At Logos IT Academy. I'd Like To Work With Angular.Js And
+            Study Angular To Improve My Knowledge And Skills In Web-Development At IT-Company.</h6>
+    </p>
+    <hr>
+    <h4 class="mySkills">My Skills</h4>
+    <div class="aboutme-skills">
+        <div class="aboutme-img html" title="HTML5"></div>
+        <div class="aboutme-img css" title="CSS3"></div>
+        <div class="aboutme-img js" title="javascript"></div>
+        <div class="aboutme-img angular" title="angularJs"></div>
+    </div>
+    <div class="aboutme-skills">
+        <div class="aboutme-img typescript" title="typescript"></div>
+        <div class="aboutme-img jquery" title="jquery"></div>
+        <div class="aboutme-img bootstrap" title="bootstrap"></div>
+        <div class="aboutme-img psd" title="psd"></div>
+    </div>
+    <hr>
+    <h4 class="blockTitle">My Favorite Sports News</h4>
+    <div id="newsSport4">
+        <div class="card" id="card" ng-repeat='new in profile.favoriteNews | limitTo:8'>
+            <img class="card-img-top" id="image" ng-src="{{new.urlToImage}}" alt="Card image cap">
+            <div class="card-body">
+                <h6 class=""><a ng-href="{{new.url}}" target="_blank" class="titl">{{new.title | limitTo: 300}} </a>
+                </h6>
+                <p id="pDescription">{{new.description | limitTo: 120}}...<a ng-href="{{new.url}}"
+                        target="_blank">читати далі</a></p>
+            </div>
+            <small id="small">Опубліковано: {{new.publishedAt | limitTo: 10}}</small>
+        </div>
+    </div>
+</div>
+<img src="/images/uparrow.png" alt="" class="back-to-top">

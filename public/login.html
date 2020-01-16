@@ -1,0 +1,19 @@
+<header><img id="logo" src="images/logo_transparent.png" alt=""></header>
+<nav>
+    <ul>
+        <a href="#!/">
+            <li>Home</li>
+        </a>
+        <a href=""><li>My profile</li></a>
+        <a href="#news" class="newsScroll">
+            <a href="#!/news"><li>News</li>
+        </a>
+    </ul>
+</nav>
+<form class="text-center  p-5">
+    <p class="h4 mb-4">Sign In</p>
+    <input type="text" id="loginUser" class="form-control mb-4 validate" placeholder="Login Name" ng-model='login.login'>
+    <input type="password" id="passwordUser" class="form-control mb-4" placeholder="Password" ng-model='login.password'>
+    <button id="submit" class="btn btn-info" ng-disabled="!login.login" type="button" ng-click="login.submit()">Sign
+        in</button>
+</form>

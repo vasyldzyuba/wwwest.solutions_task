@@ -1,0 +1,38 @@
+<header><img id="logo" src="/images/logo_transparent.png" alt=""></header>
+<main>
+	<nav> 
+		<ul>
+			<a href="#!/"><li>Home</li></a> 
+			<a href="" ng-click='news.userIsActive()'><li>My profile</li></a>
+			<li>News</li>
+		</ul>
+	</nav>
+</main>
+	<div id="news">
+		<span class="newsTitle">Business News</span>
+		<div class="card" id="card" ng-repeat='new in news.news | limitTo:8'>
+			<img class="card-img-top" id="image" ng-src="{{new.urlToImage}}" alt="Card image cap">
+			<div class="card-body">
+				<h6 class=""><a ng-href="{{new.url}}" target="_blank" class="titl">{{new.title | limitTo: 300}} </a>
+				</h6>
+				<p id="pDescription">{{new.description | limitTo: 120}}...<a ng-href="{{new.url}}" target="_blank">read
+						more</a></p>
+			</div>
+			<small id="small">Published: {{new.publishedAt | limitTo: 10}}</small>
+		</div>
+		<div id="newsSport">
+			<span class="newsTitle2">Science News</span>
+			<div class="card hideme" id="card" ng-repeat='new in news.newsSport | limitTo:8'>
+				<img class="card-img-top" id="image" ng-src="{{new.urlToImage}}" alt="Card image cap">
+				<div class="card-body">
+					<h6 class=""><a ng-href="{{new.url}}" target="_blank" class="titl">{{new.title | limitTo: 300}} </a>
+					</h6>
+					<p id="pDescription">{{new.description | limitTo: 120}}...<a ng-href="{{new.url}}"
+							target="_blank">читати далі</a></p>
+				</div>
+				<small id="small">Опубліковано: {{new.publishedAt | limitTo: 10}}</small>
+			</div>
+		</div>
+	</div>
+<img src="/images/uparrow.png" alt="" class="back-to-top">
+
