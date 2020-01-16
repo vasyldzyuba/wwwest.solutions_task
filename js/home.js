@@ -10,7 +10,7 @@ app.controller('homeCtrl', function ($http) {
 		vm.news = response.data.articles;
 	});
 	//news api
-	$http.get('https://newsapi.org/v2/top-headlines?country=ua&category=sports&apiKey=3942066075be48fd84515c049d1fb857').then(function (response) {
+	$http.get('https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=3942066075be48fd84515c049d1fb857').then(function (response) {
 		vm.newsSport = response.data.articles;
 	});
 
