@@ -18,5 +18,5 @@ LocalStorage,
 News Api,
 Exchange Api.
 
-
+If weather widget does not work, just refresh the page.
 Any problems with starting the project? Contact me via email vasyl.dzuba1@gmail.com
